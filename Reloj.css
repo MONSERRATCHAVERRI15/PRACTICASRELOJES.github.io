@@ -1,0 +1,55 @@
+/* Estilos generales para resetear márgenes y rellenos */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+  /* Fondo de la página con una imagen */
+  background-image: url('IMAGENES/IMG11.gif');
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Estilos para el contenedor principal */
+.caja {
+  width: 80%; /* Ancho del contenedor */
+}
+
+/* Estilos para el contenedor secundario */
+.caja2 {
+  width: 30%; /* Ancho del contenedor */
+}
+
+/* Estilos para los párrafos dentro de caja2 */
+.caja2 p {
+  display: inline-block; /* Mostrar los párrafos en línea */
+}
+
+/* Estilos para el contenedor de la fecha */
+.fecha {
+  font-family: Arial; /* Fuente del texto */
+  text-align: center; /* Alineación centrada */
+  font-size: 1em; /* Tamaño de la fuente */
+  margin-bottom: 1em; /* Margen inferior */
+  background: white; /* Fondo blanco */
+  border: 2px solid black; /* Borde sólido de color negro */
+  padding: 20px; /* Relleno interno */
+  width: 100%; /* Ancho del contenedor */
+  font-weight: bold; /* Texto en negrita */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para el contenedor del reloj digital */
+.reloj2 {
+  font-weight: bold; /* Texto en negrita */
+  font-family: Arial; /* Fuente del texto */
+  width: 100%; /* Ancho del contenedor */
+  padding: 20px; /* Relleno interno */
+  font-size: 2em; /* Tamaño de la fuente */
+  text-align: center; /* Alineación centrada */
+  background: white; /* Fondo blanco */
+  border: 2px solid black; /* Borde sólido de color negro */
+  border-radius: 5px; /* Bordes redondeados */
+}

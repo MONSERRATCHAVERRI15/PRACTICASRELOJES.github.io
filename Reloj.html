@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista en dispositivos móviles -->
+    <link rel="stylesheet" href="Reloj.css"> <!-- Enlace al archivo CSS para los estilos -->
+    <title>Reloj Analógico & Digital</title> <!-- Título de la página -->
+</head>
+<body>
+    <div align="center"> <!-- Contenedor principal centrado -->
+        <canvas id="canvas_reloj" width="600" height="600"></canvas> <!-- Lienzo para el reloj analógico -->
+
+        <div class="caja"> <!-- Contenedor para la fecha y hora digital -->
+            <div class="caja2"> <!-- Contenedor secundario para la organización -->
+                <div class="fecha"> <!-- Contenedor para la fecha -->
+                    <p id="dia_semana" class="dia_semana"></p> <!-- Elemento para el día de la semana -->
+                    <p>, </p> <!-- Coma para separar elementos -->
+                    <p id="dia" class="dia"></p> <!-- Elemento para el día del mes -->
+                    <p>de</p> <!-- Texto "de" -->
+                    <p id="mes" class="mes"></p> <!-- Elemento para el mes -->
+                    <p>de</p> <!-- Texto "de" -->
+                    <p id="anio" class="anio"></p> <!-- Elemento para el año -->
+                </div>
+
+                <div class="reloj2"> <!-- Contenedor para la hora digital -->
+                    <p id="horas" class="horas"></p> <!-- Elemento para las horas -->
+                    <p>:</p> <!-- Dos puntos para separar horas y minutos -->
+                    <p id="minutos" class="minutos"></p> <!-- Elemento para los minutos -->
+                    <p>:</p> <!-- Dos puntos para separar minutos y segundos -->
+                    <p id="segundos" class="segundos"></p> <!-- Elemento para los segundos -->
+                    <p id="ampm" class="ampm"></p> <!-- Elemento para indicar AM o PM -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlaces a los archivos JavaScript -->
+    <script src="Reloj.js"></script>
+    <script src="Reloj2.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* 100% del viewport height */
+    margin: 0; /* Sin márgenes en el body */
+    perspective: 1000px; /* Perspectiva para efecto 3D */
+    background: linear-gradient(to bottom, #8a2be2, #4b0082); /* Degradado en violeta */
+  }
+  
+  .container {
+    width: 200px; /* Ancho del cubo */
+    height: 200px; /* Altura del cubo */
+    position: relative; /* Posición relativa para los hijos absolutos */
+    transform-style: preserve-3d; /* Mantener transformaciones 3D */
+    animation: rotate 60s linear infinite; /* Animación de rotación */
+  }
+  
+  .cube {
+    width: 100%; /* Cubo ocupa todo el espacio del contenedor */
+    height: 100%; /* Cubo ocupa todo el espacio del contenedor */
+    position: absolute; /* Posición absoluta para hijos dentro del cubo */
+    transform-style: preserve-3d; /* Mantener transformaciones 3D */
+  }
+  
+  .face {
+    position: absolute; /* Posición absoluta para las caras */
+    width: 200px; /* Ancho de las caras */
+    height: 200px; /* Altura de las caras */
+    background-color: #333; /* Color de fondo de las caras */
+    color: white; /* Color de texto */
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    font-size: 3em; /* Tamaño de fuente grande */
+    font-family: 'Roboto', sans-serif; /* Fuente Roboto */
+    box-shadow: 0 0 10px #ff00ff; /* Sombra violeta fluorescente */
+  }
+  
+  .front {
+    transform: translateZ(100px); /* Posiciona cara frontal */
+    color: #ff0000; /* Color rojo para la cara frontal */
+  }
+  
+  .back {
+    transform: rotateY(180deg) translateZ(100px); /* Posiciona cara trasera */
+    color: #00ff00; /* Color verde para la cara trasera */
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translateZ(100px); /* Posiciona cara izquierda */
+    color: #0000ff; /* Color azul para la cara izquierda */
+  }
+  
+  .right {
+    transform: rotateY(90deg) translateZ(100px); /* Posiciona cara derecha */
+    color: #ffff00; /* Color amarillo para la cara derecha */
+  }
+  
+  .top {
+    transform: rotateX(90deg) translateZ(100px); /* Posiciona cara superior */
+    color: #ff1493; /* Color rosa para la cara superior */
+  }
+  
+  .bottom {
+    transform: rotateX(-90deg) translateZ(100px); /* Posiciona cara inferior */
+    color: #ffa500; /* Color naranja para la cara inferior */
+    font-size: 1.5em; /* Tamaño de fuente para el día y el mes */
+    display: flex; /* Flexbox para centrar contenido */
+    flex-direction: column; /* Columna para mostrar día y mes */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+  }
+  
+  #day {
+    margin-bottom: 10px; /* Espacio entre el día y el mes */
+  }
+SS  
